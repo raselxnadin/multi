@@ -24,9 +24,9 @@ exports.emptyMess = () => {
     return `❎ Harap masukkan pesan yang ingin disampaikan!`
 }
 
-exports.cmdNotFound = (cmd, prefix) => {
-    return `❎ Command *${cmd}* tidak terdaftar di *${prefix}allmenu*`
-}
+//exports.cmdNotFound = (cmd, prefix) => {
+//    return `❎ Command *${cmd}* tidak terdaftar di *${prefix}allmenu*`
+//}
 
 exports.ownerOnly = () => {
     return `❎ Command ini khusus Owner!`
@@ -81,18 +81,19 @@ exports.notNum = (q) => {
 }
 
 exports.listMenu = (time, salam, pushname, prefix) => {
-    return `*Selamat ${salam} ${pushname} 😖*
+    return `*Selamat ${salam} ${pushname} 😇*
 *⌚Time Server : ${time}*
-*📚 List-Menu Alphabot-Md :*
+*📚 List-Menu LucuBot-Md :*
 
-╭─❒ 「 Bot Info 」 ❒
+
+╭─❒ *「 Bot Info 」* ❒
 ├ ${prefix}owner
 ├ ${prefix}rules
 ├ ${prefix}botstatus
-╰❒ ${prefix}donate
+├ ${prefix}donate
+╰❒ 
 
-
-╭─❒ 「 Owner 」 ❒
+╭─❒ *「 Owner 」* ❒
 ├ < evaluate
 ├ > evaluate
 ├ $ exec
@@ -101,9 +102,10 @@ exports.listMenu = (time, salam, pushname, prefix) => {
 ├ ${prefix}self
 ├ ${prefix}public [only bot]
 ├ ${prefix}del [pesan bot]
-╰❒ ${prefix}setppbot [reply image]
+├ ${prefix}setppbot [reply image]
+╰❒
 
-╭─❒ 「 Group 」 ❒
+╭─❒ *「 Group 」* ❒
 ├ ${prefix}revoke
 ├ ${prefix}leave
 ├ ${prefix}add [62***]
@@ -113,16 +115,17 @@ exports.listMenu = (time, salam, pushname, prefix) => {
 ├ ${prefix}linkgc
 ├ ${prefix}group [open/close]
 ├ ${prefix}tagall [text]
-╰❒ ${prefix}hidetag [text]
+├ ${prefix}hidetag [text]
+╰❒
 
-╭─❒ 「 Anime 」 ❒
+╭─❒ *「 Anime 」* ❒
 ├ ${prefix}quotesanime
 ├ ${prefix}anime [query]
 ├ ${prefix}manga [query]
-╰❒ ${prefix}character [query]
+├ ${prefix}character [query]
+╰❒
 
-
-╭─❒ 「 Search 」 ❒
+╭─❒ *「 Search 」* ❒
 ├ ${prefix}ytsearch [query]
 ├ ${prefix}film [query]
 ├ ${prefix}wallpaper [query]
@@ -131,15 +134,15 @@ exports.listMenu = (time, salam, pushname, prefix) => {
 ├ ${prefix}wattpad [query]
 ├ ${prefix}webtoons [query]
 ├ ${prefix}drakor [query]
-╰❒ ${prefix}pinterest [query]
+├ ${prefix}pinterest [query]
+╰❒
 
-
-╭─❒ 「 Converter 」 ❒
+╭─❒ *「 Converter 」* ❒
 ├ ${prefix}stiker [reply image]
-╰❒${prefix}toimg [reply sticker]
+├ ${prefix}toimg [reply sticker]
+╰❒
 
-
-╭─❒ 「 Download 」 ❒
+╭─❒ *「 Download 」* ❒
 ├ ${prefix}tiktok [link]
 ├ ${prefix}tiktoknowm [link]
 ├ ${prefix}tiktokwm [link]
@@ -155,8 +158,8 @@ exports.listMenu = (time, salam, pushname, prefix) => {
 ├ ${prefix}igvideo [link]
 ├ ${prefix}igreels [link]
 ├ ${prefix}igtv [link]
-╰❒ ${prefix}twitter link
-
+├ ${prefix}twitter link
+╰❒
 
 ╭─❒ 「 Random Anime 」 ❒
 ├ ${prefix}loli
@@ -189,23 +192,9 @@ exports.listMenu = (time, salam, pushname, prefix) => {
 ├ ${prefix}wink
 ├ ${prefix}poke
 ├ ${prefix}dance
-╰❒ ${prefix}cringe
-
-
-╭─❒ 「 TqTo 」 ❒
-├ My God
-├ My Parents
-├ Fatih A.
-├ Ferdi
-├ DikaArdnt
-├ Mhankbarbar
-├ Nurutomo
-├ Rashid
-├ ZeeoneOfc
-├ Penyedia Module
-╰❒ And All Support
-
-    `
+├ ${prefix}cringe
+╰❒ 
+`
 }
 
 exports.rules = (prefix) => {
@@ -262,14 +251,13 @@ exports.tos = (ownernomer) => {
 
 Hai 👋
 Kalian bisa mendukung saya agar bot ini tetap up to date dengan:
-🏧 0887435047326 (OVO/Dana/GoPay)
+🏧 085346545126 (OVO/Dana/GoPay)
 
 Berapapun donasi kalian akan sangat berarti 👍
 
 Arigatou!
 
-Contact person Owner:
-wa.me/${ownernomer} (Owner)
-
+Contact person Owner: 
+🤳 wa.me/${ownernomer} (Owner)
     `
 }
